@@ -13,7 +13,6 @@ namespace ExercisioList
             List<Funcionario> funcionarios = new List<Funcionario>();
             
 
-
             for (int i = 0; i < registro; i++)
             {
                 var func = new Funcionario();
@@ -32,7 +31,6 @@ namespace ExercisioList
 
             Console.Write("Entre com id para adicionar ao salario: ");
             int idpor = int.Parse(Console.ReadLine());
-
             var salario = funcionarios.Find(x => x.Id == idpor);
 
 
@@ -50,9 +48,7 @@ namespace ExercisioList
             Console.WriteLine("Lista Atualizada");
             foreach (var f in funcionarios)
             {
-                
-                
-                Console.WriteLine(f.Id + "," + f.Name + ", " + f.Salary);
+                  Console.WriteLine(f.Id + "," + f.Name + ", " + f.Salary);
             }
 
         }
